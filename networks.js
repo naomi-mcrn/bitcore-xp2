@@ -6,10 +6,10 @@ var hex = function(hex) {
 
 exports.livenet = {
   name: 'livenet',
-  magic: hex('f9beb4d9'),
-  addressVersion: 0x00,
+  magic: hex('fc87bac0'),
+  addressVersion: 76,
   privKeyVersion: 128,
-  P2SHVersion: 5,
+  P2SHVersion: 28,
   hkeyPublicVersion: 0x0488b21e,
   hkeyPrivateVersion: 0x0488ade4,
   genesisBlock: {
@@ -23,24 +23,18 @@ exports.livenet = {
     bits: 486604799,
   },
   dnsSeeds: [
-    'seed.bitcoin.sipa.be',
-    'dnsseed.bluematt.me',
-    'dnsseed.bitcoin.dashjr.org',
-    'seed.bitcoinstats.com',
-    'seed.bitnodes.io',
-    'bitseed.xf2.org'
   ],
-  defaultClientPort: 8333
+  defaultClientPort: 8798
 };
 
 exports.mainnet = exports.livenet;
 
 exports.testnet = {
   name: 'testnet',
-  magic: hex('0b110907'),
-  addressVersion: 0x6f,
+  magic: hex('fc87bac0'),
+  addressVersion: 138,
   privKeyVersion: 239,
-  P2SHVersion: 196,
+  P2SHVersion: 138,
   hkeyPublicVersion: 0x043587cf,
   hkeyPrivateVersion: 0x04358394,
   genesisBlock: {
@@ -54,8 +48,6 @@ exports.testnet = {
     bits: 486604799,
   },
   dnsSeeds: [
-    'testnet-seed.bitcoin.petertodd.org',
-    'testnet-seed.bluematt.me'
   ],
-  defaultClientPort: 18333
+  defaultClientPort: 18798
 };
